@@ -29,6 +29,8 @@ import Alpine from "@components/alpinejs.astro";
         <Svelte client:load />
         <Solid client:load />
         <Lit client:load />
+        <Alpine />
+        <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
 
         <h1>Client <span class="text-gradient">Hydrated</span></h1>
         <AstroComponent />
@@ -38,6 +40,8 @@ import Alpine from "@components/alpinejs.astro";
         <Svelte client:only="svelte" />
         <Solid client:only="solid" />
         <Lit client:only="lit" />
+        <Alpine />
+        <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
     </main>
 </Layout>
 
