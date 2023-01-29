@@ -8,12 +8,18 @@ import tailwind from "@astrojs/tailwind";
 import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import solidJs from "@astrojs/solid-js";
+import svelte from "@astrojs/svelte";
+import alpinejs from "@astrojs/alpinejs";
+import lit from "@astrojs/lit";
+
+// https://astro.build/config
 export default defineConfig({
   integrations: [preact(), react(), tailwind(), prefetch({
-    selector: "a",
-  })],
+    selector: "a"
+  }), solidJs(), svelte(), alpinejs(), lit()],
   output: "server",
   adapter: node({
-    mode: "standalone",
+    mode: "standalone"
   })
 });
