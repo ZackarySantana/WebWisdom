@@ -1,5 +1,5 @@
 # Base node image
-FROM node:bullseye-slim as base
+FROM node:19-bullseye-slim as base
 
 RUN mkdir /app
 WORKDIR /app
@@ -38,4 +38,4 @@ COPY . .
 COPY --from=build /app/dist /app/dist
 COPY --from=build /app/public /app/public
 
-CMD ["npm", "run", "deploy"]
+CMD ["npm", "run", "preview"]
