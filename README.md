@@ -1,5 +1,7 @@
 # WebWisdom
 
+[Demo](https://webwisdom.fly.dev/)
+
 ## Runtime/Tools (Recommended version):
 
 ### Required
