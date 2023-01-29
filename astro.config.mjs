@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 import preact from "@astrojs/preact";
@@ -13,11 +13,20 @@ import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), react(), tailwind(), prefetch({
-    selector: "a"
-  }), solidJs(), svelte(), alpinejs(), lit()],
-  output: "server",
-  adapter: node({
-    mode: "standalone"
-  }),
+    integrations: [
+        preact(),
+        react(),
+        tailwind(),
+        prefetch({
+            selector: "a",
+        }),
+        solidJs(),
+        svelte(),
+        alpinejs(),
+        lit(),
+    ],
+    output: "server",
+    adapter: node({
+        mode: "standalone",
+    }),
 });

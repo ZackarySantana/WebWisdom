@@ -7,15 +7,13 @@ export default function () {
 
     useEffect(() => {
         const id = setInterval(() => {
-            setCount(c => c + 1);
+            setCount((c) => c + 1);
         }, 1000);
 
         return () => clearInterval(id);
     });
 
     return (
-        <div style={{ color: "orange" }}>
-            Hello world from Preact {count}
-        </div>
+        <div style={{ color: "orange" }}>Hello world from Preact {count}</div>
     );
 }
