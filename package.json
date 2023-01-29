@@ -1,5 +1,5 @@
 {
-    "name": "@example/basics",
+    "name": "webwisdom",
     "type": "module",
     "version": "0.0.1",
     "private": true,
@@ -7,7 +7,8 @@
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro build",
-        "preview": "astro preview",
+        "preview": "astro preview --host",
+        "deploy": "node ./dist/server/entry.mjs",
         "astro": "astro"
     },
     "dependencies": {
