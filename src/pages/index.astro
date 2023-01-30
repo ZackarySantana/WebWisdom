@@ -22,25 +22,25 @@ import Alpine from "@components/alpinejs.astro";
         <Alpine />
 
         <h1>Client <span class="text-gradient">Partial-hydrated</span></h1>
-        <AstroComponent />
+        <!-- <AstroComponent /> -->
         <!-- Astro components CANNOT be client side -->
         <Preact client:load />
         <React client:load />
         <Svelte client:load />
         <Solid client:load />
         <Lit client:load />
-        <Alpine />
+        <!-- <Alpine /> -->
         <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
 
         <h1>Client <span class="text-gradient">Hydrated</span></h1>
-        <AstroComponent />
+        <!-- <AstroComponent /> -->
         <!-- Astro components CANNOT be client side -->
         <Preact client:only="preact" />
         <React client:only="react" />
         <Svelte client:only="svelte" />
         <Solid client:only="solid" />
         <Lit client:only="lit" />
-        <Alpine />
+        <!-- <Alpine /> -->
         <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
     </main>
 </Layout>
