@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 
 import AstroComponent from "@components/astro.astro";
 import Preact from "@components/preact";
@@ -14,36 +14,30 @@ export const prerender = true;
 
 <Layout title="Webwisdom Demo">
     <main>
-        <h1>Only <span class="text-gradient">SRR</span></h1>
+        <h1>Can <span>only</span> be SSR</h1>
         <AstroComponent />
+        <Alpine />
+
+        <h1>Only <span>SSR</span></h1>
         <Preact />
         <React />
         <Svelte />
         <Solid />
         <Lit />
-        <Alpine />
 
-        <h1>Client <span class="text-gradient">Partial-hydrated</span></h1>
-        <!-- <AstroComponent /> -->
-        <!-- Astro components CANNOT be client side -->
+        <h1>Client <span>Partial-hydrated</span></h1>
         <Preact client:load />
         <React client:load />
         <Svelte client:load />
         <Solid client:load />
         <Lit client:load />
-        <!-- <Alpine /> -->
-        <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
 
-        <h1>Client <span class="text-gradient">Hydrated</span></h1>
-        <!-- <AstroComponent /> -->
-        <!-- Astro components CANNOT be client side -->
+        <h1>Client <span>Hydrated</span></h1>
         <Preact client:only="preact" />
         <React client:only="react" />
         <Svelte client:only="svelte" />
         <Solid client:only="solid" />
         <Lit client:only="lit" />
-        <!-- <Alpine /> -->
-        <!-- Alpine.js is attached to astro and thus CANNOT be client side -->
     </main>
 </Layout>
 
@@ -59,7 +53,7 @@ export const prerender = true;
         margin: 0;
         margin-top: 2rem;
     }
-    .text-gradient {
+    span {
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
