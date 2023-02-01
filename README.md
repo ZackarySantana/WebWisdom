@@ -11,7 +11,7 @@ All contributions will be made via the PR tab! Create a branch/fork, code your s
 ### Required
 
 -   [Node](https://nodejs.org/en/) v19.3.0
--   NPM v9.2.0
+-   NPM v9.2.0 (Comes with Node)
 
 ### Not required
 
