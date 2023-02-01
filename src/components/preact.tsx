@@ -11,7 +11,7 @@ export default function () {
         }, 1000);
 
         return () => clearInterval(id);
-    });
+    }, []);
 
     return (
         <div style={{ color: "orange" }}>Hello world from Preact {count}</div>
