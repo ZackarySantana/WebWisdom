@@ -2,6 +2,10 @@
 
 [Demo](https://webwisdom.fly.dev/)
 
+## Contributing
+
+All contributions will be made via the PR tab! Create a branch/fork, code your solution, link the supporting issue that the PR is for, and then make the PR on the GitHub tab.
+
 ## Runtime/Tools (Recommended version):
 
 ### Required
