@@ -14,11 +14,21 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), react(), tailwind(), prefetch({
-    selector: "a"
-  }), solidJs(), svelte(), alpinejs(), lit(), vue({ jsx: true })],
-  output: "server",
-  adapter: node({
-    mode: "standalone"
-  })
+    integrations: [
+        preact(),
+        react(),
+        tailwind(),
+        prefetch({
+            selector: "a",
+        }),
+        solidJs(),
+        svelte(),
+        alpinejs(),
+        lit(),
+        vue({ jsx: true }),
+    ],
+    output: "server",
+    adapter: node({
+        mode: "standalone",
+    }),
 });

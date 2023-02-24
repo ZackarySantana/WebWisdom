@@ -27,12 +27,12 @@ All contributions will be made via the PR tab! Create a branch/fork, code your s
 -   [Astro](https://astro.build/) - Main Framework
 -   [TypeScript](https://www.typescriptlang.org/docs/) - Main language
 -   Additional:
-    - [React](https://reactjs.org/)
-    - [Preact](https://preactjs.com/)
-    - [Svelte](https://svelte.dev/)
-    - [Solid](https://www.solidjs.com/)
-    - [Lit](https://lit.dev/)
-    - [Alpine](https://alpinejs.dev/)
+    -   [React](https://reactjs.org/)
+    -   [Preact](https://preactjs.com/)
+    -   [Svelte](https://svelte.dev/)
+    -   [Solid](https://www.solidjs.com/)
+    -   [Lit](https://lit.dev/)
+    -   [Alpine](https://alpinejs.dev/)
 
 ### Backend:
 
@@ -55,7 +55,9 @@ All contributions will be made via the PR tab! Create a branch/fork, code your s
 ```bash
 flyctl deploy
 ```
+
 Or
+
 ```bash
 fly deploy
 ```
