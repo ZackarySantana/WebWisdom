@@ -8,6 +8,7 @@ import Solid from "@components/solidjs";
 import Svelte from "@components/svelte.svelte";
 import Lit from "@components/lit";
 import Alpine from "@components/alpinejs.astro";
+import Vue from "@components/vue.vue";
 
 export const prerender = true;
 ---
@@ -24,6 +25,7 @@ export const prerender = true;
         <Svelte />
         <Solid />
         <Lit />
+        <Vue/>
 
         <h1>Client <span>Partial-hydrated</span></h1>
         <Preact client:load />
@@ -31,6 +33,7 @@ export const prerender = true;
         <Svelte client:load />
         <Solid client:load />
         <Lit client:load />
+        <Vue client:load />
 
         <h1>Client <span>Hydrated</span></h1>
         <Preact client:only="preact" />
@@ -38,6 +41,7 @@ export const prerender = true;
         <Svelte client:only="svelte" />
         <Solid client:only="solid" />
         <Lit client:only="lit" />
+        <Vue client:only="vue" />
     </main>
 </Layout>
 

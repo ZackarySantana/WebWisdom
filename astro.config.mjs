@@ -10,7 +10,9 @@ import solidJs from "@astrojs/solid-js";
 import svelte from "@astrojs/svelte";
 import alpinejs from "@astrojs/alpinejs";
 import lit from "@astrojs/lit";
+import vue from "@astrojs/vue";
 
+// https://astro.build/config
 export default defineConfig({
     integrations: [
         preact(),
@@ -23,6 +25,7 @@ export default defineConfig({
         svelte(),
         alpinejs(),
         lit(),
+        vue({ jsx: true }),
     ],
     output: "server",
     adapter: node({
